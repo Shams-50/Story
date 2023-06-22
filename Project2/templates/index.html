@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premier League Top Scorers</title>
+</head>
+<body>
+    <h1>Premier League Top Scorers</h1>
+
+    {% for scorer in scorers: %}
+    <h3>{{ scorer.name }} {{ scorer.goals }}</h3>
+    {% endfor %}
+
+    <a type="button" href="{{ url_for('add_player') }}">Add Player</a>
+
+
+</body>
+</html>
